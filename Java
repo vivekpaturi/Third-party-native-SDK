@@ -1,0 +1,19 @@
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+
+public class MyBarcodeScannerModule extends ReactContextBaseJavaModule {
+    public MyBarcodeScannerModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+    }
+
+    @Override
+    public String getName() {
+        return "MyBarcodeScanner";
+    }
+
+    @ReactMethod
+    public void startScanning() {
+        
+    }
+}
